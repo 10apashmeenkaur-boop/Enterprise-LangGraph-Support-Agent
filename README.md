@@ -23,9 +23,8 @@ Unlike standard linear RAG pipelines, this system utilizes a **Cyclic Graph Stat
 * **State Persistence:** Implemented `MemorySaver()` checkpointer to allow multi-turn conversation memory across different session threads.
 * **Hallucination Mitigation:** The Technical Agent is strictly bound to a *Context-Precision* system prompt; if the vector retrieval yields `<0.70` cosine similarity, the agent is forced to trigger the `EscalateToHuman` tool rather than guessing.
 
-## 📋 Local Setup
 
-```bash
-git clone [https://github.com/yourusername/enterprise-langgraph-support-agent.git](https://github.com/yourusername/enterprise-langgraph-support-agent.git)
+
+(WILL REQUIRE API KEY)
 cd enterprise-langgraph-support-agent
 pip install -r requirements.txt
